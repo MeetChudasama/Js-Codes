@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Square_Qube</title>
+    <style>
+      button {
+        background-color: lightblue;
+        margin-left: 165px;
+        padding: 3px 10px;
+        color: black;
+        font-size: 16px;
+        font-weight: 500;
+        border-radius: 3px;
+        border: 1px solid black;
+        transition: all 0.5s;
+      }
+      button:hover {
+        background-color: cadetblue;
+        color: darkgreen;
+        border-radius: 7px;
+      }
+      #qube {
+        margin-left: 0;
+      }
+      input {
+        margin: 10px;
+        border: transparent;
+        border: 1px solid black;
+        color: rgb(0, 0, 0);
+        background-color: rgb(180, 227, 229);
+        outline: none;
+        font-size: 16px;
+      }
+      label {
+        font-weight: 600;
+        font-size: 21px;
+      }
+      #result {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <label>Enter Number:</label><input type="text" id="num" /><br /><br />
+    <button onclick="Square()" id="square">SQUARE</button>
+    <button onclick="Qube()" id="qube">QUBE</button>
+    <div id="result"></div>
+
+    <script>
+      function Square() {
+        let a = document.getElementById("num").value;
+        let square;
+        square = a ** 2;
+        document.getElementById("result").innerHTML = `Sqaure = ${square}`;
+      }
+
+      function Qube() {
+        let a = document.getElementById("num").value;
+        let qube;
+        qube = a ** 3;
+        document.getElementById("result").innerHTML = `Qube = ${qube}`;
+      }
+    </script>
+  </body>
+</html>

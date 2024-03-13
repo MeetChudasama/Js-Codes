@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+<body>
+    <label>Enter Number:</label><input type="text" id="num"><br>
+    <button type="button" id="btn" onclick="palindrome()">Palindrome</button>
+    <div id="res"></div>
+
+    <script>
+        let palindrome=()=>{
+            let num = Number(document.getElementById('num').value)
+            let rev = 0, rem
+            let momentory = num
+            let res = document.getElementById('res')
+            while(num> 0){
+                rem = num % 10
+                rev = (rev * 10)+rem
+                num = parseInt(num /10)
+            }
+            
+            if(momentory == rev){
+                res.innerHTML+=`number is palindrome
+                <br>`
+            }
+            else
+                res.innerHTML+=`number is not palindrome
+            <br>`
+        }   
+    </script>
+</body>
+</html>

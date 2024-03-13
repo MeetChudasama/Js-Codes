@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primeNumber</title>
+</head>
+<body>
+    <input type="text" id="num">
+    <button type="button" onclick="checkPrime()">Check Prime</button><br><br>
+    <div id="res"></div>
+    <script>
+        let checkPrime=()=>{
+                let num = Number(document.getElementById('num').value)
+                let res = document.getElementById('res')
+                let flag = 0
+                for(let i= 2; i< num; i++){
+                    if(num% i==0){
+                        flag= 1
+                        break
+                    }
+                }
+                if(flag== 0){
+                    res.innerHTML=('number is prime')
+                    res.style.color = 'green'
+                }
+                else{
+                    res.innerHTML=('number is not prime')
+                    res.style.color = 'red'
+                }
+        }
+    </script>
+</body>
+</html>

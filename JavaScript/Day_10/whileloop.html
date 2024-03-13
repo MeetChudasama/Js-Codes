@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>While Loop</title>
+  </head>
+  <body>
+    <input type="text" id="num">
+    <input type="button" id="btn" value="Table" onclick="table()"></input><br>
+    <div id="result"></div>
+
+    <script>
+        let table = function(){
+            let num = Number(document.getElementById('num').value)
+            let res = document.getElementById('result')
+            let i = 1
+            while(i <= 10){
+                res.innerHTML+= `${num} x ${i} = ${num * i}<br>` //in here + is for not overwriting. when we do it without + then it prints the last value of loop
+                i++
+        }
+    }
+
+
+    /*
+        let table = function(){
+            let num = Number(document.getElementById('num').value)
+            let res = document.getElementById('result')
+            let i = 1
+            while(i <= 10){   //it prints table without ani signs like x and =
+                document.write(`${num * i}<br>`)
+                i++
+            }
+        }
+    */    
+
+    /*
+      let i = 1;
+      while (i <= 10000) {
+        document.write(` ${i}. Meettttt<br>`);
+        i++;
+      }
+    */ 
+   
+    /*
+      let a = 1;
+        while (a++ <= 10) 
+          // document.write(`${a}. Meet<br>`);
+        console.log(`${a}. Meet<br>`)
+    */  
+    </script>
+  </body>
+</html>

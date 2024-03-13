@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operator</title>
+  </head>
+  <body>
+    
+
+    <script>
+
+      let a = 5;
+      let b = 4;
+      b = a++;  //In this ++ is postfix thats why 'b' got value of 'a' first so 'b' is 5 and 'a' is 6 bcz 'a' got increment 
+      document.write(`a = ${a} b = ${b}<br>`);
+
+      let c = 2;
+      let d;
+      d = c++;  //In this same as 'a' and 'b'
+      document.write(`c = ${c} d = ${d}<br>`);
+
+      let e = 3;
+      let f;
+      f = ++e;  //In this ++ is prefix thats why 'f' got the value of 'e' after the calculation so both let has a same value bcz 'f' got value after increment and than also 'e' got increment
+      document.write(`e = ${e} f = ${f}<br>`);
+
+      let g = 10;
+      let h = g++;
+      let i = ++g;
+      let j = ++h;
+      document.write(`${g} and ${h} and ${i} and ${j}<br>`);
+
+                 // Ternary Operator / Conditional Operator
+
+          //Syntax = condition ? true : false
+      let k = 100,
+          l = 20;
+          
+      k > l ? document.write("k Is Greater") : document.write("l Is Greater");
+
+      
+    </script>
+  </body>
+</html>

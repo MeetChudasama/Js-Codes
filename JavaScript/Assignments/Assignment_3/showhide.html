@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Show Hide Image</title>
+  </head>
+  <style>
+    .show {
+      text-align: center;
+    }
+    #btn {
+      padding: 10px 150px;
+      margin-bottom: 20px;
+      border-radius: 0%;
+      border: 2px solid #171a42;
+      background-color: #a27bd6;
+      transition: all 0.5s;
+    }
+    #btn:hover {
+      border: 2px solid transparent;
+      background-color: #824ec5;
+    }
+    img {
+      border: 5px groove #171a42;
+      padding: 1px;
+    }
+  </style>
+  <body>
+    <div class="show">
+      <button type="button" id="btn" onclick="showHide()">Hide</button>
+      <div id="img">
+        <img src="/JavaScript/assets/SL7.jpg" height="500px" width="1000px" />
+      </div>
+    </div>
+
+    <script>
+      let showHide = () => {
+        let hide = document.getElementById("img");
+        let btn = document.getElementById("btn");
+        if (hide.style.display === "none") {
+          hide.style.display = "block";
+          btn.textContent = "Hide";
+        } else {
+          hide.style.display = "none";
+          btn.textContent = "Show";
+        }
+      };
+    </script>
+  </body>
+</html>

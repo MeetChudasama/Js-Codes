@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Circle</title>
+</head>
+
+<body>
+    <label>Enter Radius Value: </label><input type="text" id="R"><Br>
+    <button type="button" onclick="areaOfCircle()">Find Area of Circle</button><br />
+    <div id="Result"></div>
+
+    <script>
+        function areaOfCircle() {
+            let Radius = document.getElementById('R').value
+            const Pi = 3.14
+            let area
+            area = Pi * Radius * Radius
+            document.getElementById('Result').innerHTML = `Area of Circle = ${area}`
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ArrayDemo</title>
+  </head>
+  <body>
+    <script>
+      let arr = ["Meet", "Piyu", 2801, true, null, undefined, 28]; //if we print undefined and null then we are gonna see then in output
+
+      let arrr = ["Priyanshi", 128, "CM", true, null, undefined, "Chudasama"];
+
+      document.write(`${arr} <br> ${arrr}<br>`); // if we want to print whole array / all values stored in array
+
+      document.write(`${arr[2]} <br> ${arrr[0]}`); //'[]' square bracket is called as subscript operator in array index no. in array is always start with 0 and then 1, 2, 3 regular
+
+      arr[2] = "Chudasama"; //if we want to change any index then we can change it like this
+
+      document.write(`${arr[2]}<br>`); // if we want to print any specific index/array then we can print it like this we have to only write its index no.
+
+      let arrrr = new Array("Meet", "Piya"); //we can also specify values to the array like thi too it's the java script way to define array
+
+      document.write(`${arrrr.length}<br>`) //it specify the length of array like how many words/elements are there
+
+      document.write(`${arrrr[2]}<br><br>`) //if we write index which is not define then it says undefined, when we write -2 then we also get undefined
+
+      //if we want elements one by one then we can use loop
+            for(i= 0; i< arr.length; i++){
+                // document.write(`${arr[i]}<br>`)
+                document.write(`index no.${i} & value is: ${arr[i]}<br>`)
+            }
+
+    </script>
+  </body>
+</html>

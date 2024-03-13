@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>If_Else Statement</title>
+  </head>
+  <body>
+    <!-- <input type="text" id="num" /><button type="button">Simple If</button><br /> -->
+    <input type="text" id="Num"><button type="button" onclick="statement()">If Else</button>
+    <div id="result"></div>
+    <script>
+        function statement(){
+            let res = document.getElementById('result')
+            let N = Number(document.getElementById('Num').value)
+            if(N%2 == 0){
+                res.innerHTML = `${N} Is Even Number `
+            }
+            else{
+                res.innerHTML = `${N} Is Odd Number`
+            }
+        }
+
+
+    //   document.querySelector("button").onclick = function () {
+    //     let n = Number(document.getElementById("num").value)
+    //     if (n > 0) {
+    //       alert(`${n} Number is positive`)
+    //     } else {
+    //       alert(`${n} Number is Negative`)
+    //     }
+
+    //     let a = 10
+    //     if (a++); // here a becomes 0 so there is no calculation so no output
+    //     document.write(a)
+    //   }
+    </script>
+  </body>
+</html>

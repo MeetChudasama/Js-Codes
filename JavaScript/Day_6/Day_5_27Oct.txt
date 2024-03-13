@@ -1,0 +1,107 @@
+swap without third variable -
+var a=20
+var b=30
++ , - => operators
+
+a =a+b // a = 50
+b= a-b // 50-30 =20
+a= a-b // 50-20 // 30
+
+
+========================================================
+
+let and const -
+
+<script>
+    //var a // hoisting
+    document.write(a) //undefined
+    var a = 10
+</script>
+
+var let
+hoist never hoist
+function scope block scope
+redeclartion not allowed
+
+
+area of circle -> PI*r*r
+PI= 3.14
+const - constant (fixed value)
+
+==========================================================
+function write(){
+
+}
+
+fun()
+fun()
+
+types of user defined function -
+1. no argument and no return value
+2. argument but no return value
+3. no argument but return value
+4. argument and return value
+
+
+1. 
+no argument and no return value
+
+function add(){
+let a=2,b=4
+document.write(a+b)
+}
+
+add()
+
+
+2. 
+function add(num1,num2){//num1=3, num2=4 (formal parameter / argument)
+document.write(num1+num2)
+}
+
+add(3,4) // actual argument / parameter
+let a=5,b=10
+add(a,b) // add(5,10)
+
+
+3. 
+function add(){
+let a=2,b=4
+return a+b
+.
+.
+.
+}
+let result=add()
+document.write(result)
+document.write(add())
+
+
+4.
+function add(num1,num2){//num1=5, num2=10 (formal parameter / argument)
+return num1+num2
+}
+
+let a=5,b=10 // global variable
+let result=add(a,b) // add(5,10)
+document.write(result)
+
+==================operators==================
+
+
+
+        1. arithmetic => + , -, *, /, % , **
+        2. relational => < > <= >= == === != !==
+        3. assignment => = , +=,-=,*=, /=, %= ,**=
+        4. increment and decrement => ++ ,--
+        5. logical => && , || and !
+        6. ternary / conditional => ?:
+        7. nullish - ??
+        8. typeof() and instanceof()
+
+
+
+123/10 => 12.3
+123 % 10 => 3
+900 % 10 => 0
+2 % 10 => 2

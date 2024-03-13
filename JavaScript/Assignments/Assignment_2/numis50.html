@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Is that number 50??</title>
+</head>
+<body>
+    <label>Enter Num1:</label><input type="text" id="num1"><br>
+    <label>Enter Num2:</label><input type="text" id="num2"><br><br>
+    <button type="button" onclick="isit50()">Is It 50??</button><br><br>
+    <div>Result: <span id="result"></span></div>
+    <script>
+        let isit50=()=>{
+            let num1= Number(document.getElementById('num1').value)
+            let num2= Number(document.getElementById('num2').value)
+            let res= document.getElementById('result')
+            if(num1== 50 || num2== 50 || num1+ num2== 50){
+                res.innerHTML = true
+            }
+            // else if(num1+ num2== 50){
+            //     res.innerHTML = true
+            // }
+            else{
+                res.innerHTML = false
+            }
+        }
+
+    </script>
+</body>
+</html>

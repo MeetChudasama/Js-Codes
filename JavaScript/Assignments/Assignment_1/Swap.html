@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Swap</title>
+    <style>
+      button {
+        background-color: lightblue;
+        padding: 5px 30px;
+        color: black;
+        font-size: 20px;
+        font-weight: 700;
+        border-radius: 7px;
+        border: none;
+        transition: all 0.5s;
+      }
+      button:hover {
+        background-color: cadetblue;
+        color: darkgreen;
+        border-radius: 7px;
+      }
+      input {
+        border: transparent;
+        border-bottom: 2px solid grey;
+        background-color: lightcyan;
+        outline: none;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Before Swap a: <input type="text" id="a"><br>
+    Before Swap b: <input type="text" id="b"><br><br> -->
+    
+    <button ondblclick="swap()">Swap</button><br><br/>
+    After Swap a: <input type="text" id="x"><br>
+    After Swap b: <input type="text" id="y"><br><br>
+    <div id="result"></div>
+    
+    <script>
+      function swap() {
+        // let a =document.getElementById('a').value
+        // let b =document.getElementById('b').value
+        // document.getElementById(`value of a: ${a}, value of b: ${b}`)
+
+        let a = Number(prompt("1st Value: "));
+        let b = Number(prompt("2nd Value: "));
+        let c;
+        c = a;
+        a = b;
+        b = c;
+        document.getElementById("x").value = a;
+        document.getElementById("y").value = b;
+      }
+    </script>
+  </body>
+</html>

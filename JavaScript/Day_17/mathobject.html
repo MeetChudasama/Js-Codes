@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Object</title>
+</head>
+<body>
+    <button type="button" onclick="changeBackColor()" >Change Background Color</button>
+    <div id="math"></div>
+    <script>
+        // most probably math object does not support document.write
+        console.log(`${Math.sqrt(5)}`)// for getting the squareroot of the value
+
+        console.log(`${Math.pow(5,2)}`)//pow uses for getting the square or qube you can put any value on it i have given 2 but i can give 5, 8, 9 etc..., 5 is value and 2 is power
+        let ma = Math.pow(5,2)//pow does not support document.write
+            document.getElementById('math').innerHTML=ma
+
+        console.log(`${Math.abs(-5)}`)//it changes aby negative value into positive value
+
+        console.log(`${Math.round(50.40)}`)
+        console.log(`${Math.round(50.70)}`)//it gaves the value with round figure if the value is biggers then .05 then it gaves the next value like 50.70 = 51, if smaller then it retuns the same value without the point value like 50.40 = 50 
+
+        console.log(`${Math.floor(50.33)}`);// in floor what are the values are it gaves only lower bound of value like 50.33 its 50 and if 50.77 its also 50 
+
+        console.log(`${Math.ceil(50.33)}`);// in ceil what are the values are it gaves only upper bound of value like 50.33 its 50 and if 50.77 its also 50 
+
+        console.log(`${Math.min(5, 10, 55, 15, 25, 35)}`);// to find the minimum value from the given values
+
+        console.log(`${Math.max(5, 10, 55, 15, 25, 35)}`);// to find the maximum value from the given values
+
+        /* Random it generates random values like a captcha from 0 to 10 */
+
+        // window.onload=()=>{
+        //     document.write(`${Math.random()}<br>`)
+        //     document.write(`${Math.random()*9}<br>`)//values between 1 to 9 so we can use * operator
+        //     document.write(`${Math.random()*9}<br>`)
+        //     document.write(`${Math.round(Math.random()*10)}<br>`)//if we don't want values after point we can use round
+        //     document.write(`${Math.round(Math.random()*10+1)}<br>`)//if we don't want values to start from 0 we can use + operator
+        //     document.write(`${Math.round(Math.random()*19+5)}<br>`)//if we want value between 5 to 25 if we put + operator than the * operator start after     the + operators value
+        //     // Math.round(Math.random()*(max-min-1)+min) 
+        //     // Math.round(Math.random()*(max-min)+min) 
+
+        // }
+
+        let changeBackColor=()=>{
+            let color = Math.round(Math.random()*999999)
+            document.body.style.backgroundColor = `#${color}`
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Check Date</title>
+  </head>
+  <body>
+    <input type="date" id="date" />
+    <button type="button" onclick="checkDate()">Check</button><br />
+    <div id="res"></div>
+
+    <script>
+      let checkDate = () => {
+        let res = document.getElementById("res");
+        let date = document.getElementById("date").value;
+        let today = new Date();
+        let date1 = new Date(date);
+        if (today < date1) {
+          res.innerHTML = `date should not be futuristic`;
+          res.style.color = "red";
+        } else {
+          res.innerHTML = "That's what we can afford";
+          res.style.color = "green";
+        }
+      };
+    </script>
+  </body>
+</html>

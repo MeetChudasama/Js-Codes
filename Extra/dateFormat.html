@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Date Format</title>
+</head>
+<body>
+    <input type="number" id="num">
+    <input type="button" id="btn" value= "split"onclick="splitNumber()">
+    <script>
+        // let dateFormat=()=>{
+        //     let today = new Date()
+
+        //     let dd = today.getDate()
+        //     let mm = today.getMonth()
+        //     let yyyy = today.getFullYear()
+
+        //     today = `${mm} - ${dd} - ${yyyy}`
+        //     today1 = `${dd} - ${mm} - ${yyyy}`
+        //     today2 = `${mm} / ${dd} / ${yyyy}`
+        //     today3 = `${dd} / ${mm} / ${yyyy}`
+
+        //     console.log(today);
+        //     console.log(today1);
+        //     console.log(today2);
+        //     console.log(today3);
+        // }
+        // dateFormat()
+
+        let splitNumber= () =>{
+            let num2 = document.getElementById('num').value
+            let n1 = num2/2
+            let n2 = num2/2
+            let arr = [n1, n2]
+            if(num2 % 2 == 0){
+                console.log(arr);  
+            }
+            else{
+               arr[0] = Math.floor(n1)
+               arr[1] = Math.ceil(n2)
+               console.log(arr);
+            }
+
+        }
+
+    </script>
+</body>
+</html>

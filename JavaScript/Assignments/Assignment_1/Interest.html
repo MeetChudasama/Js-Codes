@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interest</title>
+    <style>
+        button{
+            background-color: lightblue;
+            padding: 5px 30px;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 7px;
+            border: none;
+            transition: all .5s;
+        }
+        button:hover{
+            background-color:cadetblue;
+            color:darkgreen;
+            border-radius: 7px;
+        }
+        input{
+            border: transparent;
+            border-bottom: 2px solid grey;
+            background-color: lightcyan;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <label>Principal: </label><input type="text" id="principal"><br>
+    <label>Time: </label><input type="text" id="time"><br>
+    <label>Rate: </label><input type="text" id="rate"><br>
+    <label>Result: </label><input type="text" id="result"><br><br>
+    <button onclick="simple()">Simple Interest</button>
+    <button onclick="compound()">Compound Interest</button>
+
+
+
+    <script src="interest.js"></script>
+
+</body>
+</html>

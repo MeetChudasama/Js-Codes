@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PrintReverseInWord</title>
+</head>
+<body>
+    <label>Enter Number:</label><input type="text" id="num"><br>
+    <button type="button" id="btn" onclick="reverseinword()">Reverse</button>
+    <div id="res"></div>
+
+    <script>
+        let reverseinword=()=>{
+            let num = Number(document.getElementById('num').value)
+            let rev = 0, rem
+            let momentory = num
+            let res = document.getElementById('res')
+            while(num> 0){
+                rem = num % 10
+                rev = (rev * 10)+rem
+                num = parseInt(num /10)
+               
+                
+                switch(rem){
+                    case 0:{res.innerHTML+='Zero';break}
+                    case 1:{res.innerHTML+='One';break}
+                    case 2:{res.innerHTML+='Two';break}
+                    case 3:{res.innerHTML+='Three';break}
+                    case 4:{res.innerHTML+='Four';break}
+                    case 5:{res.innerHTML+='Five';break}
+                    case 6:{res.innerHTML+='Six';break}
+                    case 7:{res.innerHTML+='Seven';break}
+                    case 8:{res.innerHTML+='Eight';break}
+                    case 9:{res.innerHTML+='Nine';break}
+
+                
+            }
+            }
+        }    
+    </script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date Object</title>
+  </head>
+  <body>
+    <script>
+      let d = new Date();
+      document.write(`${d}<br>`); // gives day month time date year
+      document.write(`${Date.now()}<br>`); //gaves into miliseconds
+      document.write(`${d.getDate()}<br>`); //for date, month starts from index 0 jan - 11 dec
+      document.write(`${d.getDay()}<br>`); //for day like mon, tue....
+      document.write(`${d.getFullYear()}<br>`); //full year 2024
+      document.write(`${d.getMonth()}<br>`); //month 1, 2, 3....
+      document.write(`${d.getTime()}<br>`); //time in miliseconds
+      document.write(`${d.toDateString()}<br>`); //gives day month date and year
+      document.write(`${d.toLocaleDateString()}<br>`); //date month and year in locale format
+      document.write(`${d.toLocaleTimeString()}<br>`); //time hours minutes and seconds on locale format
+
+      let date = new Date(2005, 0, 28, 9, 30, 35); //y m d h mi s
+      document.write(`${date}<br>`);
+      let date1 = new Date("2005/1/28"); //in string format month starts with index 1 jan - 12 dec
+      document.write(`${date1}<br>`);
+      date.setFullYear(2001); //to change the year
+      document.write(`${date}<br>`);
+      date.set(2001); //to change the date
+      document.write(`${date}<br>`);
+    </script>
+  </body>
+</html>

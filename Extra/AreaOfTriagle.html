@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triangle</title>
+</head>
+<body>
+    <p>Click to print whatever is on window</p>
+    <button type="button" onclick="printWindow()">Print</button><br><br>
+    <script>
+        let val1 = 5 
+        let val2 = 6 
+        let val3 = 7
+        let s = (val1 + val2 + val3) / 2 
+        
+        let area = Math.sqrt(s * (s - val1) * (s - val2) * (s - val3))
+        document.write(area);
+        
+// for printing the whole page as xerox
+        let printWindow=()=>{
+            window.print()
+            
+        }
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Switch</title>
+</head>
+<body>
+    <input type="text" id="weekday"><button type="button" onclick="switchdemo()">Check Weekday</button><br>
+    <div id="data"></div>
+    <script>
+
+        let switchdemo=()=>{
+            let weekday = parseInt(document.getElementById('weekday').value)
+            let res = document.getElementById('data')
+            switch(weekday){
+                case 0:{res.innerHTML='This Day Is Holiday';break}
+                case 3:{res.innerHTML='This Day Is Wednesday';break}
+                case 4:{res.innerHTML='This Day Is Thursday';break}
+                case 5:{res.innerHTML='This Day Is Friday';break}
+                case 2:{res.innerHTML='This Day Is Tuesday';break}
+                case 6:{res.innerHTML='This Day Is Weekend';break}
+                case 1:{res.innerHTML='This Day Is Monday';break}
+                default:{res.innerHTML='Invalid Day';break}
+            }
+
+        }
+    </script>
+</body>
+</html>

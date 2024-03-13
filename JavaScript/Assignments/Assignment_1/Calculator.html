@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        button{
+            background-color: lightblue;
+            padding: 5px 30px;
+            color: black;
+            font-size: 20px;
+            font-weight: 700;
+            border-radius: 7px;
+            border: none;
+            transition: all .5s;
+        }
+        button:hover{
+            background-color:cadetblue;
+            color:darkgreen;
+            border-radius: 7px;
+        }
+        input{
+            border: transparent;
+            border-bottom: 2px solid grey;
+            background-color: lightcyan;
+            outline: none;
+        }
+    </style>
+</head>
+<body>
+    <label>Enter Num1:</label><input type="text" id="num1"><br>
+    <label>Enter Num2:</label><input type="text" id="num2"><br><br>
+    <label>Operations:</label>
+    <button onclick="plus()">+</button>
+    <button onclick="minus()">-</button>
+    <button onclick="multiply()">*</button>
+    <button onclick="divide()">/</button>
+    <button onclick="module()">%</button><br>
+    <label>Result: <span id="res"></span></label>
+
+    <script>
+        function plus(){
+            let a = parseInt(document.getElementById('num1').value)
+            let b = parseInt(document.getElementById('num2').value)
+            document.getElementById('res').innerHTML = ` ${a + b}`
+        }
+        function minus(){
+            let a = parseInt(document.getElementById('num1').value)
+            let b = parseInt(document.getElementById('num2').value)
+            document.getElementById('res').innerHTML = `${a - b}`
+        }
+        function multiply(){
+            let a = parseInt(document.getElementById('num1').value)
+            let b = parseInt(document.getElementById('num2').value)
+            document.getElementById('res').innerHTML = `${a * b}`
+        }
+        function divide(){
+            let a = parseInt(document.getElementById('num1').value)
+            let b = parseInt(document.getElementById('num2').value)
+            document.getElementById('res').innerHTML = `${a / b}`
+        }
+        function module(){
+            let a = parseInt(document.getElementById('num1').value)
+            let b = parseInt(document.getElementById('num2').value)
+            document.getElementById('res').innerHTML = `${a % b}`
+        }
+    </script>
+</body>
+</html>

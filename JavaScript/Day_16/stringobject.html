@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Object</title>
+</head>
+<body>
+    <script>
+        let str = "Meet"
+        let str1 = new String("Chudasama Meet!")
+
+        document.write(`${typeof(str)} and ${typeof(str1)}<br>`)//for showing what is the type 
+        document.write(`${str1.length}<br>`)//for showing how many characters are in there it counts the numbers
+        document.write(`${str1.charAt(5)}<br>`)//which alphabet is on the 5th index which character is on the index
+        document.write(`${str1.charCodeAt(0)}<br>`)//display ascii values of alphabets
+        document.write(`${str1.startsWith("C")}<br>`)//if the string starts with "C" then it gaves f otherwise t
+        document.write(`${str1.endsWith("C")}<br>`)//if the string ends with "C" then it gaves f otherwise t
+        document.write(`${str1.repeat(4)}<br>`)//prints the string 4 times, 4= how many times you want to print
+        document.write(`${str1.match(str)}<br>`)//show the matching value between two strings if there is nothing then prints null
+
+
+        let str2 = "Kon nichiwa chudasuma san arigatogozaimasu chudasuma"
+        let str3 = "Kon nichiwa chudasuma san arigatogozaimasu Chudasuma"
+        let arr = str2.split(" ")//converts string into array, in this condition we able to decide that from where we want a value, in this we want it where the spaces 
+        document.write(`${arr[3]}<br>`)//[]it gaves on which index which value is stored
+        let arr2 = str2.split(" ",3)//if we want to print only 3 index of array then we can use it
+        document.write(`${arr2}<br>`)
+
+
+        document.write(`${str2.replace('chudasuma','Meet')}<br>`)//if we want to replace any word from string and array
+        document.write(`${str2.replace(/chudasuma/g,'Meet')}<br>`)// in this 'g' stands for global and its a resgular expression with the help of 'g' we able to repalce all the same words in the string / array
+        document.write(`${str3.replace(/chudasuma/ig,'Meet')}<br>`)// in this 'i' stands for insensitive and its a resgular expression with the help of 'ig' we able to repalce all the same words in the string / array with we able to change it if its upper or lowercase or where you can find that word if its have other words with its other words stay and our words gonna replace
+
+
+
+
+    </script>
+</body>
+</html>
