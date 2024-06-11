@@ -3,10 +3,10 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 
 // join():
 //     document.write(`${arr.join('')}<br>`) 
-//         // if we want to print array with the sign of miltiplication or addition or substraction or any  other sign like @, #, $, ^, & also we can do it with number '123456' or alpbhabets 'abcdef' 
+//          if we want to print array with the sign of miltiplication or addition or substraction or any  other sign like @, #, $, ^, & also we can do it with number '123456' or alpbhabets 'abcdef' 
 
 //     document.write(`${arr.join('*')}<br>`) 
-//         // if we want to print it like with only 'space' we can do that so the thing is that we can add anything between 2 array elements/values
+//         if we want to print it like with only 'space' we can do that so the thing is that we can add anything between 2 array elements/values
 
 //     document.write(`${arr.join(' a ')}<br>`)
 
@@ -42,10 +42,10 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 
 // splice(): 
 // if we want to delete any value from the middle like from 120 130 1 2 3 4 28 10 i wanna delete 2 and also we can add values using splice()method
-//     arr.splice(3,1,44,212) 
-//         // in here 3 is index of number and 1 is how many values we want to delete and then the value you want to add
+    arr.splice(3,1,44,212) 
+        // in here 3 is index of number and 1 is how many values we want to delete and then the value you want to add
 
-//     document.write(`${arr.join("  ")}<br>`); 
+    // document.write(`${arr.join("  ")}<br>`); 
 
 
 
@@ -59,9 +59,9 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 // slice(): 
 // if we want take value form middle of array then we can use slice() e.g. 1, 2, 3, 4 we can take 2 and 4 from this array and if we want to show values between specific index 
 // if we write -8, -3 then also it works
-//  document.write(`${arr.slice(2, 7)}`);
-    // let email = 'meetchudasama80@gamil.com'
-    // document.write(`${email.slice(0, -10)}`)
+ document.write(`${arr.slice(2, 7)}`);
+    let email = 'meetchudasama80@gamil.com'
+    document.write(`${email.slice(0, -10)}`)
 
 
 
@@ -72,11 +72,11 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 
 // sort(): 
 // it makes values to be in ascending order like 2,4,6,1,2,5 = 1,2,3,4,5,6
-    document.write(`${arr.sort()}<br>`)// it only checks the first digit of value
+    // document.write(`${arr.sort()}<br>`)// it only checks the first digit of value
 
-    document.write(`${arr.sort((a, b) => a - b)}<br>`); // it checks the whole value in ascending order
+    // document.write(`${arr.sort((a, b) => a - b)}<br>`); // it checks the whole value in ascending order
 
-    document.write(`${arr.sort((a, b) => b - a)}<br>`);// descending order
+    // document.write(`${arr.sort((a, b) => b - a)}<br>`);// descending order
 
 //concat(): 
 // if we want to merge two array with each other then we can use it

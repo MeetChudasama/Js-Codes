@@ -11,7 +11,7 @@ function compound(){
     let p = Number(document.getElementById('principal').value)
     let t = Number(document.getElementById('time').value)
     let r = Number(document.getElementById('rate').value)
-    let ci = (p*(1 + r/100)**t)
-    document.getElementById('result').value = `${ci - p}`
+    let ci = ((p*(1 + r/100)**t)-p)
+    document.getElementById('result').value = `${ci}`
 
 }

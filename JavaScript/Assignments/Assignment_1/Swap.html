@@ -35,7 +35,7 @@
     <button ondblclick="swap()">Swap</button><br><br/>
     After Swap a: <input type="text" id="x"><br>
     After Swap b: <input type="text" id="y"><br><br>
-    <div id="result"></div>
+    <!-- <div id="result"></div> -->
     
     <script>
       function swap() {
@@ -45,10 +45,13 @@
 
         let a = Number(prompt("1st Value: "));
         let b = Number(prompt("2nd Value: "));
-        let c;
-        c = a;
-        a = b;
-        b = c;
+        // let c;
+        // c = a;
+        // a = b;
+        // b = c;
+        a = a + b
+        b = a - b
+        a = a - b
         document.getElementById("x").value = a;
         document.getElementById("y").value = b;
       }

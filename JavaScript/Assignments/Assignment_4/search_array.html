@@ -1,0 +1,77 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Array</title>
+</head>
+<body>
+  <div>
+    <form id="searchForm" onsubmit="searchArray()">
+      <label for="arraySize">Enter the Array size:</label>
+      <input type="text" name="size" id="size">
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+<script>
+  let searchArray = () => {
+      let arr = document.getElementById('size').value
+        if(isNaN(arr) || arr <= 0)
+        alert('please enter a valid number')  
+
+      let array = []
+        for(i = 0; i < arr; i++){
+        let value = prompt('Enter the array value')
+        array.push(value)
+        }
+
+      let searchElement = prompt('Enter which element you want:')
+      let index = array.indexOf(searchElement)
+
+        if(index !== -1)
+            alert(`element ${searchElement} found at ${index}`)
+        else
+            alert(`element ${searchElement} is not found `)
+  }
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search Array</title>
+</head>
+<body>
+    <div>
+      <form id="searchForm" onsubmit="searchArray()">
+        <label for="size">Enter The Size Of Array:</label>
+        <input type="text" name="sizeOfArray" id="sizeOfArray">
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  <script>
+    let searchArray = () => {
+      let arr = document.getElementById('sizeOfArray').value
+      if(isNaN(arr) || arr <= 0)
+        alert('Please Enter a Valid Value')
+
+      let array = []
+        for(i = 0; i<arr; i++){
+        let value = prompt('Enter The Values')
+        array.push(value)
+        }
+
+      let searchElement = prompt('Enter the Element Which You Have to find The Index')
+      let index = array.indexOf(searchElement)
+
+      if(index !== -1)
+        alert(`Element ${searchElement} Is At Index ${index}`)
+      else
+        alert(`Element ${searchElement} is not Found`)
+    }
+  </script>
+</body>
+</html>

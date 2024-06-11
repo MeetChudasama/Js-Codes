@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poster Gallery</title>
+<style>
+    /* Styles for the images */
+    .poster {
+        width: 300px;
+        height: 200px;
+        margin: 10px;
+        cursor: pointer;
+        
+    }
+
+    /* Style for the main poster image */
+    #mainPoster {
+        width: 1000px;
+        height: 650px;
+        border: 2px solid black;
+    }
+    .main{
+        width: 1000px;
+        margin: 0 auto;
+    }
+    .child{
+        display: flex;
+        justify-content: center;
+    }
+</style>
+</head>
+<body>
+
+<div class="main">
+<!-- Main poster image -->
+<img id="mainPoster" src="/JavaScript/assets/OP14.jpg" alt="Main Poster">
+</div>
+<div class="child">
+<!-- Small images to choose from -->
+<img class="poster" src="/JavaScript/assets/N (62).jpg" alt="Poster 1">
+<img class="poster" src="/JavaScript/assets/JJK21.jpg" alt="Poster 2">
+<img class="poster" src="/JavaScript/assets/MHA (1).png" alt="Poster 3">
+<img class="poster" src="/JavaScript/assets/SL7.jpg" alt="Poster 4">
+<img class="poster" src="/JavaScript/assets/OP14.jpg" alt="Poster 5">
+</div>
+<script>
+    // Get all the small images
+    var posters = document.querySelectorAll('.poster');
+    // Get the main poster image
+    var mainPoster = document.getElementById('mainPoster');
+
+    // Add click event listeners to all small images
+    posters.forEach(function(poster) {
+        poster.addEventListener('click', function() {
+            // Change the source of the main poster image to the clicked image
+            mainPoster.src = poster.src;
+            // Update the alt text of the main poster image to the alt text of the clicked image
+            mainPoster.alt = poster.alt;
+        });
+    });
+</script>
+
+</body>
+</html>
