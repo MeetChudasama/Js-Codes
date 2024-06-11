@@ -42,7 +42,7 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 
 // splice(): 
 // if we want to delete any value from the middle like from 120 130 1 2 3 4 28 10 i wanna delete 2 and also we can add values using splice()method
-    arr.splice(3,1,44,212) 
+    // arr.splice(3,1,44,212) 
         // in here 3 is index of number and 1 is how many values we want to delete and then the value you want to add
 
     // document.write(`${arr.join("  ")}<br>`); 
@@ -58,11 +58,11 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 
 // slice(): 
 // if we want take value form middle of array then we can use slice() e.g. 1, 2, 3, 4 we can take 2 and 4 from this array and if we want to show values between specific index 
-// if we write -8, -3 then also it works
- document.write(`${arr.slice(2, 7)}`);
-    let email = 'meetchudasama80@gamil.com'
-    document.write(`${email.slice(0, -10)}`)
-
+// if we write -8, -3 then also it works then it removes from the last 
+//  document.write(`${arr.slice(2, 6)}<br>`);
+    // let email = 'meetchudasama80@gamil.com'
+    // document.write(`${email.slice(2, -6)}`)
+// document.write(arr)
 
 
 // indexOf(): 
@@ -80,9 +80,9 @@ let arr = new Array(1, 2, 3, 4, 53, 67, 7, 8, 93,44)
 
 //concat(): 
 // if we want to merge two array with each other then we can use it
-    // let arr1 = ['Chudasama']
-    // let arr2 = ['Meet']
-    //     document.write(`${arr1.concat(arr2).join(' ')}<br>`);
+    let arr1 = ['Chudasama']
+    let arr2 = ['Meet']
+        document.write(`${arr1.concat(arr2).join(' ')}<br>`);//in this join is for replacing coma with the space between arr1 and arr2
 
 //toString(): 
 // if we want to convert our array to string value
